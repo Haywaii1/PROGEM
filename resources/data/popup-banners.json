@@ -1,0 +1,172 @@
+{
+    "version": "0.4",
+    "title": "Popup Banners",
+    "type": "popup",
+    "metadata": {
+        "template_type": "section-popup",
+        "include_in_zip": "1",
+        "elementor_pro_required": "1",
+        "elementor_library_type": "popup",
+        "elementor_pro_conditions": [
+            "include\/singular\/front_page"
+        ],
+        "additional_template_information": [
+            "This is a \"Popup\" template for Elementor Pro.",
+            "This template will display on: Front Page."
+        ],
+        "wp_page_template": "default"
+    },
+    "content": [
+        {
+            "id": "27ee78c",
+            "settings": {
+                "gap": "no",
+                "background_background": "classic",
+                "background_image": {
+                    "url": "https:\/\/templatekits.themewarrior.com\/minerva\/wp-content\/uploads\/sites\/31\/2021\/09\/bg-popup-1.jpg",
+                    "id": "356",
+                    "alt": "",
+                    "source": "library"
+                },
+                "background_position": "center center",
+                "background_repeat": "no-repeat",
+                "background_size": "cover",
+                "background_overlay_background": "gradient",
+                "background_overlay_opacity": {
+                    "unit": "px",
+                    "size": "1",
+                    "sizes": []
+                },
+                "border_radius": {
+                    "unit": "px",
+                    "top": "12",
+                    "right": "12",
+                    "bottom": "12",
+                    "left": "12",
+                    "isLinked": "1"
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "300",
+                    "right": "30",
+                    "bottom": "24",
+                    "left": "30",
+                    "isLinked": ""
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "200",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": ""
+                },
+                "__globals__": {
+                    "background_overlay_color": "globals\/colors?id=c2edc3d",
+                    "background_overlay_color_b": "globals\/colors?id=0b1d1e6"
+                },
+                "_title": "Section: Popup"
+            },
+            "elements": [
+                {
+                    "id": "3c4ff40d",
+                    "settings": {
+                        "_column_size": "100",
+                        "_inline_size": "",
+                        "space_between_widgets": "16"
+                    },
+                    "elements": [
+                        {
+                            "id": "5790c3a9",
+                            "settings": {
+                                "title": "Start Your Business Now",
+                                "header_size": "h3",
+                                "align": "center",
+                                "__globals__": {
+                                    "typography_typography": "globals\/typography?id=3ab2f3b",
+                                    "title_color": "globals\/colors?id=accent"
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "61986b47",
+                            "settings": {
+                                "title": "Condimentum eget est lectus mauris ullamcorper Adipiscing amet pellentesque magna nisima.",
+                                "header_size": "div",
+                                "align": "center",
+                                "__globals__": {
+                                    "title_color": "globals\/colors?id=accent",
+                                    "typography_typography": "globals\/typography?id=text"
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "6fd18fef",
+                            "settings": {
+                                "text": "Get started now",
+                                "selected_icon": {
+                                    "value": "fas fa-angle-right",
+                                    "library": "fa-solid"
+                                },
+                                "icon_align": "right",
+                                "icon_indent": {
+                                    "unit": "px",
+                                    "size": "8",
+                                    "sizes": []
+                                },
+                                "__globals__": {
+                                    "background_color": "globals\/colors?id=secondary",
+                                    "typography_typography": "globals\/typography?id=accent",
+                                    "button_text_color": "globals\/colors?id=text"
+                                },
+                                "hover_animation": "float",
+                                "align": "center"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "button",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": "",
+                    "elType": "column"
+                }
+            ],
+            "isInner": "",
+            "elType": "section"
+        }
+    ],
+    "page_settings": {
+        "width": {
+            "unit": "px",
+            "size": "510",
+            "sizes": []
+        },
+        "entrance_animation_mobile": "zoomIn",
+        "exit_animation_mobile": "fadeIn",
+        "border_radius": {
+            "unit": "px",
+            "top": "12",
+            "right": "12",
+            "bottom": "12",
+            "left": "12",
+            "isLinked": "1"
+        },
+        "width_mobile": {
+            "unit": "px",
+            "size": "325",
+            "sizes": []
+        },
+        "__globals__": {
+            "close_button_color": "globals\/colors?id=accent"
+        }
+    }
+}
