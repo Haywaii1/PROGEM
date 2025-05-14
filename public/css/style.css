@@ -5,8 +5,7 @@
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
-    font-family: Arial, sans-serif;
-
+    font-family: 'Montserrat', sans-serif;
   }
     .container-fluid {
         max-width: 100%;
@@ -16,9 +15,9 @@
 
 
 /* Navigation Styles */
-/* Top red bar */
+/* Top #ff0000 bar */
 .top-bar {
-    background-color: #e12424;
+    background-color: #ff0000;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -93,7 +92,7 @@
   }
 
   .nav-links a.active {
-    color: #e12424;
+    color: #ff0000;
   }
 
   .navbar .dropdown-menu a {
@@ -107,8 +106,8 @@
 
 
   .get-in-touch {
-    border: 1px solid #e12424;
-    color: #e12424;
+    border: 1px solid #ff0000;
+    color: #ff0000;
     padding: 8px 16px;
     border-radius: 3px;
     text-decoration: none;
@@ -123,7 +122,7 @@
 
 .dropdown-item:hover {
     background-color: #f8f9fa;
-    color: #e12424;
+    color: #ff0000;
 }
 
 .navbar-brand img {
@@ -248,7 +247,7 @@
 }
 
 .about-title span {
-    color: #e53935;
+    color: #ff0000;
 }
 
 .text-block p {
@@ -259,7 +258,7 @@
 }
 
 .read-more-btn {
-    background: #e53935;
+    background: #ff0000;
     color: white;
     font-weight: bold;
     padding: 12px 20px;
@@ -271,7 +270,7 @@
 }
 
 .read-more-btn:hover {
-    background: #c62828;
+    background: #ff0000;
 }
 
 .read-more-btn span {
@@ -475,8 +474,7 @@
   }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-family: 'Montserrat', sans-serif;    margin: 0;
     padding: 40px;
     background: #fff;
     color: #333;
@@ -510,7 +508,7 @@ body {
   }
 
   .highlight {
-    color: red;
+    color: #ff0000;
   }
 
   .description {
@@ -536,7 +534,7 @@ body {
   .feature-box .icon {
     font-size: 24px;
     margin-right: 15px;
-    color: red;
+    color: #ff0000;
   }
 
   .feature-box.yellow {
@@ -614,7 +612,7 @@ body {
   }
 
   .header h2 span {
-    color: red;
+    color: #ff0000;
   }
 
   .header p {
@@ -733,7 +731,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 40px; /* Reduce space between image and text */
+    gap: 40px; /* #ff0000uce space between image and text */
   }
 
   .testimonial-text {
@@ -846,7 +844,7 @@ body {
       }
 
       .blog-header h2 span {
-        color: red;
+        color: #ff0000;
       }
 
       .blog-header p {
@@ -857,7 +855,7 @@ body {
 
       .view-all {
         display: inline-block;
-        background: red;
+        background: #ff0000;
         color: white;
         padding: 10px 20px;
         text-decoration: none;
@@ -1007,7 +1005,7 @@ body {
 
 .newsletter-form button {
     padding: 12px 20px;
-    background-color: #e74c3c;
+    background-color: #ff0000;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -1018,7 +1016,7 @@ body {
 }
 
 .newsletter-form button:hover {
-    background-color: #c0392b;
+    background-color: #ff0000;
 }
 
 @media (max-width: 768px) {
@@ -1105,12 +1103,12 @@ body {
   }
 
   .footer-col ul li a:hover {
-    color: #e74c3c;
+    color: #ff0000;
   }
 
   .contact-list li i {
     margin-right: 10px;
-    color: #e74c3c;
+    color: #ff0000;
   }
 
   .social-icons {
@@ -1119,7 +1117,7 @@ body {
   }
 
   .social-icons a {
-    background-color: #e74c3c;
+    background-color: #ff0000;
     color: #fff;
     padding: 10px;
     border-radius: 50%;
@@ -1130,7 +1128,7 @@ body {
   }
 
   .social-icons a:hover {
-    background-color: #c0392b;
+    background-color: #ff0000;
   }
 
   .footer-bottom {
@@ -1317,9 +1315,9 @@ body {
     letter-spacing: 1px;
   }
 
-  .red {
-    color: #e60000;
-  }
+  /* .#ff0000 {
+    color: #ff0000;
+  } */
 
   .logo {
     display: flex;
@@ -1358,7 +1356,7 @@ body {
   }
 
   .icon {
-    background-color: #f44336;
+    background-color: #ff0000;
     color: white;
     padding: 8px;
     border-radius: 50%;
@@ -1452,7 +1450,7 @@ body {
 
 .social-icons .icon {
     font-size: 20px;
-    color: #e12424;
+    color: #ff0000;
     transition: color 0.3s ease;
     text-decoration: none; /* Removes underline */
 
@@ -1473,8 +1471,7 @@ body {
     width: 100%;
     clip-path: path("M0 0 H100% V85% C100% 95% 80% 100% 0 100% Z");
     color: white;
-    font-family: 'Segoe UI', sans-serif;
-    position: relative;
+    font-family: 'Montserrat', sans-serif;    position: relative;
   }
 
   .breadcrumb-container {
@@ -1499,8 +1496,7 @@ body {
 /* Container padding */
 .latest-posts {
     background: #f9f9f9;
-    font-family: Arial, sans-serif;
-  }
+    font-family: 'Montserrat', sans-serif;  }
 
   /* Header */
   .section-title {
@@ -1521,16 +1517,16 @@ body {
     margin: 0;
   }
 
-  /* Featured Card */
-  .featured-card img {
+  /* Featu#ff0000 Card */
+  .featu#ff0000-card img {
     object-fit: cover;
     height: 300px;
   }
-  .featured-card .card-title {
+  .featu#ff0000-card .card-title {
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
   }
-  .featured-card .card-text {
+  .featu#ff0000-card .card-text {
     color: #555;
     font-size: 0.95rem;
   }

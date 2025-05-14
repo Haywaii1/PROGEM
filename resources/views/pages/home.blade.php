@@ -116,29 +116,30 @@
                         nulla blandit.
                     </p>
 
-                    <h3>More than 10 years experience</h3>
-
-                    <div class="feature-box">
-                        <span class="icon">❌</span>
-                        <div>
-                            <strong>Lorem proin eget eu molestie euismod</strong>
-                            <p>Elit sit risus lorem proin eget eu molestie nibh odioa.</p>
+                    <div class="features-list">
+                        <div class="feature-box">
+                            <span class="icon">✅</span>
+                            <strong>We CRAFT Brand stories that resonate</strong>
                         </div>
-                    </div>
 
-                    <div class="feature-box">
-                        <span class="icon">❌</span>
-                        <div>
-                            <strong>Fermentum elit euismod sed pharetra</strong>
-                            <p>Elit sit risus lorem proin eget eu molestie nibh odioa.</p>
+                        <div class="feature-box">
+                            <span class="icon">✅</span>
+                            <strong>We CREATE Impactful Brand Narratives</strong>
                         </div>
-                    </div>
 
-                    <div class="feature-box yellow">
-                        <span class="icon">❌</span>
-                        <div>
-                            <strong>Duis sagittis vitae diam duis nulla nisi</strong>
-                            <p>Elit sit risus lorem proin eget eu molestie nibh odioa.</p>
+                        <div class="feature-box">
+                            <span class="icon">✅</span>
+                            <strong>We BUILD Skilled Comms Talent Pool</strong>
+                        </div>
+
+                        <div class="feature-box">
+                            <span class="icon">✅</span>
+                            <strong>We CONNECT Brands with their Audience</strong>
+                        </div>
+
+                        <div class="feature-box">
+                            <span class="icon">✅</span>
+                            <strong>We DRIVE Results with Brand Strategy</strong>
                         </div>
                     </div>
                 </div>
@@ -241,40 +242,40 @@
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Include this below your previous section -->
-            <section class="testimonial-section" data-aos="fade-up">
-                <div class="testimonial-container">
-                    <div class="testimonial-text" data-aos="fade-up">
-                        <span class="quote-mark">“</span>
-                        <h2>Best Public Relations</h2>
-                        <p>
-                            Elit sit risus lorem proin eget eu molestie nibh odioa neque turpis proin viverra vel arcu
-                            venenatis
-                            nulla blandit lorem tristique morbi nulla risus lorem proin eget odioa non.
-                        </p>
-                        <div class="author-info">
-                            <strong>Elizabeth Lawson</strong>
-                            <div class="role">Business</div>
-                        </div>
-                    </div>
-
-                    <div class="dot-box" data-aos="fade-up" data-aos-delay="200"></div>
-
-                    <div class="testimonial-image" data-aos="zoom-in">
-                        <img src="img/dentist2.jpg" alt="Happy User">
+        <!-- Include this below your previous section -->
+        <section class="testimonial-section" data-aos="fade-up">
+            <div class="testimonial-container">
+                <div class="testimonial-text" data-aos="fade-up">
+                    <span class="quote-mark">“</span>
+                    <h2>Best Public Relations</h2>
+                    <p>
+                        Elit sit risus lorem proin eget eu molestie nibh odioa neque turpis proin viverra vel arcu
+                        venenatis
+                        nulla blandit lorem tristique morbi nulla risus lorem proin eget odioa non.
+                    </p>
+                    <div class="author-info">
+                        <strong>Elizabeth Lawson</strong>
+                        <div class="role">Business</div>
                     </div>
                 </div>
-            </section>
+
+                <div class="dot-box" data-aos="fade-up" data-aos-delay="200"></div>
+
+                <div class="testimonial-image" data-aos="zoom-in">
+                    <img src="img/dentist2.jpg" alt="Happy User">
+                </div>
+            </div>
+        </section>
         </section>
 
         {{-- blog section --}}
         <section class="blog-section">
             <div class="blog-header">
-                <small>BLOG</small>
-                <h2><span>Latest</span> Blog Post</h2>
+                <h2><span>News</span> Articles</h2>
                 <p>Elit sit risus lorem proin eget molestie nibh onon neque turpis proin.</p>
-                <a href="{{ route('blog.index') }}" class="view-all">View Articles</a>
+                <a href="{{ route('blog.index') }}" class="view-all">More Articles</a>
             </div>
             <section>
                 <div class="container my-5 d-flex justify-content-center">
@@ -298,28 +299,28 @@
         </section>
 
         <section class="newsletter my-5" data-aos="fade-up">
-    <div class="newsletter-container">
-        {{-- Text Section --}}
-        <div class="newsletter-text">
-            <small>Stay Updated</small>
-            <h2>Join our <span>Newsletter</span></h2>
-            <p>Get the latest updates, tips, and exclusive offers right in your inbox.</p>
+            <div class="newsletter-container">
+                {{-- Text Section --}}
+                <div class="newsletter-text">
+                    <small>Stay Updated</small>
+                    <h2>Join our <span>Newsletter</span></h2>
+                    <p>Get the latest updates, tips, and exclusive offers right in your inbox.</p>
 
-            @if (session('newsletter_success'))
-                <div class="alert alert-success py-2 px-3 mt-2 d-inline-block">
-                    {{ session('newsletter_success') }}
+                    @if (session('newsletter_success'))
+                        <div class="alert alert-success py-2 px-3 mt-2 d-inline-block">
+                            {{ session('newsletter_success') }}
+                        </div>
+                    @endif
                 </div>
-            @endif
-        </div>
 
-        {{-- Form Section --}}
-        <form action="{{ route('newsletter.subscribe') }}" method="POST" class="newsletter-form">
-            @csrf
-            <input type="email" name="email" placeholder="Your email address" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </div>
-</section>
+                {{-- Form Section --}}
+                <form action="{{ route('newsletter.subscribe') }}" method="POST" class="newsletter-form">
+                    @csrf
+                    <input type="email" name="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
 
 
 
