@@ -200,7 +200,8 @@
                         <img src="img/brand-management.png" alt="Public Relations">
                         <div class="card-body">
                             <h3>Brand Management</h3>
-                            <p>Tailoring a holistic approach to build, maintain, and evolve your brand identity across all channels.
+                            <p>Tailoring a holistic approach to build, maintain, and evolve your brand identity across all
+                                channels.
                             </p>
                             <div class="arrow">→</div>
                         </div>
@@ -232,7 +233,8 @@
                         <img src="img/media-training.png" alt="Public Relations">
                         <div class="card-body">
                             <h3>Media Training</h3>
-                            <p> Equipping your spokespeople with skills to confidently navigate interviews and turn media moments into positive press.
+                            <p> Equipping your spokespeople with skills to confidently navigate interviews and turn media
+                                moments into positive press.
                             </p>
                             <div class="arrow">→</div>
                         </div>
@@ -295,37 +297,30 @@
             </section>
         </section>
 
-        <section class="newsletter-section py-4" style="background-color: #f8f9fa;">
-    <div class="container text-center" data-aos="fade-up">
-        <h3 class="mb-2 fw-semibold" style="color: #2c3e50;">Stay Updated</h3>
-        <p class="mb-3 text-muted small">Join our newsletter for updates and exclusive offers.</p>
+        <section class="newsletter my-5" data-aos="fade-up">
+    <div class="newsletter-container">
+        {{-- Text Section --}}
+        <div class="newsletter-text">
+            <small>Stay Updated</small>
+            <h2>Join our <span>Newsletter</span></h2>
+            <p>Get the latest updates, tips, and exclusive offers right in your inbox.</p>
 
-        @if (session('newsletter_success'))
-            <div class="alert alert-success alert-sm w-auto d-inline-block px-3 py-2">
-                {{ session('newsletter_success') }}
-            </div>
-        @endif
+            @if (session('newsletter_success'))
+                <div class="alert alert-success py-2 px-3 mt-2 d-inline-block">
+                    {{ session('newsletter_success') }}
+                </div>
+            @endif
+        </div>
 
-        <form action="{{ route('newsletter.subscribe') }}" method="POST" class="d-flex justify-content-center flex-wrap gap-2 mt-2">
+        {{-- Form Section --}}
+        <form action="{{ route('newsletter.subscribe') }}" method="POST" class="newsletter-form">
             @csrf
-            <input
-                type="email"
-                name="email"
-                placeholder="Your email"
-                required
-                class="form-control form-control-sm"
-                style="width: 220px; max-width: 100%; border-radius: 4px;"
-            >
-            <button
-                type="submit"
-                class="btn btn-sm btn-dark"
-                style="border-radius: 4px;"
-            >
-                Subscribe
-            </button>
+            <input type="email" name="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
         </form>
     </div>
 </section>
+
 
 
     </main>

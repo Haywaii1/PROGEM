@@ -14,8 +14,8 @@
             <div class="container header-container mb-5">
                     <div class="col-md-12 text-center">
                         <h2 class="section-title">
-                            <span class="light">Latest</span>
-                            <span class="dark">Blog Posts</span>
+                            <span class="light">News</span>
+                            <span class="dark">Articles</span>
                         </h2>
                     </div>
             </div>

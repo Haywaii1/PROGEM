@@ -1,66 +1,83 @@
 @extends('layouts.app')
 
 @section('content')
-    <div>
-        <section class="about-progem">
-            <div class="about-progem-content">
+<div class="about-case-wrapper py-5">
 
-                <h1 class="about-title" data-aos="fade-right"><span>About</span> Us</h1>
-                <p>Creatives and geometric!</p>
-            </div>
-        </section>
+    {{-- About Section --}}
+    <section class="about-progem py-5 text-center bg-light" data-aos="fade-right">
+        <div class="container">
+            <h1 class="section-heading mb-3"><span>Case</span> Studies</h1>
+            <p class="lead">Creatives and geometric!</p>
+        </div>
+    </section>
 
-        <section>
-            <div>
-                <h1>Case Studies</h1>
-                <h2>SRMS NEW WAREHOUSE LAUNCH</h2>
-                <p>Strategic PR to drive national brand awareness and client acquisition for a leading provider of
-                    end-to-end document management and secure software solutions.
-                <p>
-            </div>
+    {{-- Case Studies Section --}}
+    <section class="case-studies py-5 bg-white">
+        <div class="container">
 
-            <div>
-                <h2>The Challenge</h2>
-                <p>Secured Records Management Solutions (SRMS) needed to strategically communicate the launch of their new
-                    warehouse to attract new clients and solidify their industry leadership position. To achieve this, they
-                    required a communications agency with deep expertise in the SRMS industry and the broader communications
-                    landscape.
-                <p>
-            </div>
+            {{-- SRMS Case Study --}}
+            <div class="case-box p-4 mb-5 shadow-sm rounded bg-light">
+                <h1 class="section-heading">SRMS New Warehouse Launch</h1>
+                <p>Strategic PR to drive national brand awareness and client acquisition for a leading provider of end-to-end document management and secure software solutions.</p>
 
-            <div>
-                <h2>The Strategy</h2>
-                <p>Understanding SRMS’s needs, we leveraged our Tech sector expertise to craft a comprehensive PR plan. This
-                    included advising on current trends in document management and identifying key opportunities for SRMS to
-                    capitalise on. We went beyond the brief, crafting targeted messaging and securing placements for SRMS,
-                    including a press release and an exclusive thought-leader interview. Throughout the campaign, we scaled
-                    our resources to meet SRMS’s needs, ensuring maximum impact for their new warehouse launch.</p>
+                <h4 class="text-secondary mt-4">The Challenge</h4>
+                <p>SRMS needed to strategically communicate the launch of their new warehouse to attract new clients and solidify their industry leadership position.</p>
+
+                <h4 class="text-secondary mt-4">The Strategy</h4>
+                <p>We crafted a comprehensive PR plan leveraging tech expertise, created press materials, and secured exclusive placements to ensure a successful launch.</p>
+
+                <h4 class="text-secondary mt-4">The Outcome</h4>
+                <ul class="mb-0">
+                    <li><b>Press Announcement:</b> Created buzz across the industry.</li>
+                    <li><b>Thought Leadership:</b> Positioned CEO as a trusted voice.</li>
+                    <li><b>Media Relations:</b> Secured national tech and business placements.</li>
+                    <li><b>Passionate Delivery:</b> Enthusiastic and audience-focused execution.</li>
+                </ul>
             </div>
 
-            <h1>The Outcome</h1>
-            <p><b>Press announcement</b>: We crafted a compelling press release announcing the commissioning of SRMS's new
-                warehouse. This high-impact announcement generated industry buzz and increased brand awareness for SRMS.</p>
-            <p><b>Thought leadership</b>: We positioned SRMS as a leading voice in the industry by securing an exclusive
-                interview placement for their Chief Executive Officer. Their expertise on document security, data privacy
-                and the future of document management was shared with a targeted audience.</p>
-            <p><b>Media relations</b>: We garnered significant media attention for SRMS through placements in prominent
-                national business and technology publications. These content showcased their innovative solutions and the
-                success stories of their clients, demonstrating the value SRMS delivers.</p>
-            <p><b>Passionate Delivery</b>: Our team delivered the communication campaign with enthusiasm and a genuine desire
-                        to connect with the target audience</P>
-        </section>
+            {{-- ReelSkills Case Study --}}
+            <div class="case-box p-4 mb-5 shadow-sm rounded bg-light">
+                <h1 class="section-heading">ReelSkills Empowerment Initiative</h1>
+                <p>A program empowering Nigerian youth with agribusiness skills and job-matching opportunities.</p>
 
-        <section>
-            <div>
-                <h2>REELSKILLS EMPOWERMENT INITIATIVE</h2>
-                <P>Empowering Nigerian youth for agribusiness careers, we launched the ReelSkills initiative, a program providing skill development and job-matching in the agribusiness sector.</p>
-            </div>
-            <div>
-                <h2>The Challenge</h2>
-                <p></P>
+                <h4 class="text-secondary mt-4">The Challenge</h4>
+                <p>To effectively launch and promote the initiative to Nigerian youth interested in agribusiness careers.</p>
 
+                <h4 class="text-secondary mt-4">The Strategy</h4>
+                <p>We conducted deep audience research and built a communication strategy tailored to youth engagement channels and behavior.</p>
+
+                <h4 class="text-secondary mt-4">The Outcome</h4>
+                <ul class="mb-0">
+                    <li><b>Press Release:</b> Successfully reached relevant audiences.</li>
+                    <li><b>Media Relations:</b> Virtual roundtable improved coverage.</li>
+                    <li><b>Engaging Content:</b> Connected with the right tone and relevance.</li>
+                    <li><b>Passionate Delivery:</b> Sincere and youth-focused campaign.</li>
+                </ul>
             </div>
 
-        </section>
-    </div>
+            {{-- NPA Case Study --}}
+            <div class="case-box p-4 mb-5 shadow-sm rounded bg-light">
+                <h1 class="section-heading">Nigeria Packaging Academy Graduation</h1>
+                <p>Generating buzz and legitimacy for NPA’s first graduation and the launch of NaijaStar Awards.</p>
+
+                <h4 class="text-secondary mt-4">The Challenge</h4>
+                <p>Creating visibility and credibility for a first-time event in a competitive sector.</p>
+
+                <h4 class="text-secondary mt-4">The Strategy</h4>
+                <p>We built a PR campaign around storytelling, visual coverage, and strategic press outreach to position NPA as a thought leader.</p>
+
+                <h4 class="text-secondary mt-4">The Outcome</h4>
+                <ul class="mb-0">
+                    <li><b>Media Coverage:</b> National visibility for the event.</li>
+                    <li><b>Photojournalist Presence:</b> Visual content that resonated.</li>
+                    <li><b>Increased Traffic:</b> Website hits and program inquiries grew.</li>
+                    <li><b>Credibility Boost:</b> Reinforced NPA’s authority in the industry.</li>
+                    <li><b>Passionate Delivery:</b> Personal and impactful storytelling.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+</div>
 @endsection

@@ -58,49 +58,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="container about-content">
-                    <div class="text-block" data-aos="fade-right">
-                        <p class="about-subtitle" style="color: #e12424; font-weight: bold;">What we do</p>
+            </section>
 
-                        <p>
-                        <ul>
-                            <li>Public Relations: We help you build and maintain a positive public perception of your brand.
-                            </li>
-                            <li>Strategic Consultancy: Gain clarity on your PR goals and develop a roadmap for achieving
-                                them
-                                with our expert guidance.</li>
-                            <li>Career Coaching: We bridge the gap between talent and sustainable careers, offering
-                                long-term
-                                coaching specifically designed for PR enthusiasts.</li>
-                            <li>Media Relations: Securing positive media coverage to reach your target audience.</li>
-                            <li>Brand Management: Tailoring a holistic approach to build, maintain, and evolve your brand
-                                identity across all channels.</li>
-                            <li>Crisis Communications: Developing and implementing a plan to navigate negative publicity.
-                            </li>
-                            <li>Partnerships/Sponsorships: Creating strategic alliances with other organisations for mutual
-                                benefit.</li>
-                            <li>Influencer Marketing: Collaborating with influencers and creators to develop targeted social
-                                content that resonates with your audience, builds brand loyalty, and drives measurable
-                                results.</li>
-                            <li>Social Media Management: We develop targeted content that aligns with your communication
-                                objectives, builds a strong online community, and drives measurable success.</li>
-                            <li>Reputation Management: We provide a comprehensive approach that monitors, protects, and
-                                amplifies your brand's positive image, driving growth and customer trust.</li>
-                            <li>Media Training: Equipping your spokespeople with skills to confidently navigate interviews
-                                and
-                                turn media moments into positive press.</li>
-                            <li>Strategy Development: Creating and implementing a comprehensive plan to achieve your
-                                communication goals.</li>
-                            <li>Events/Conferences: We bring your vision to life, executing events that connect you with
-                                your
-                                audience in a memorable way.</li>
-                        </ul>
-
-                        </p>
-                    </div>
-                </div>
-
-                <section class="services-section">
+                <section class="services-section" style="margin-top: 20px;">
                     <div class="container">
                         <div class="header" data-aos="fade-right">
                             <h2><span>What</span> we do</h2>
@@ -242,8 +202,7 @@
                             </div>
                         </div>
                     </div>
-
-
+                </section>
 
                     <div class="container about-content">
                         <div class="text-block" data-aos="fade-right">
