@@ -169,11 +169,23 @@
 
         <section class="services-section">
             <div class="container">
-                <div class="header" data-aos="fade-right">
-                    <h2><span>What</span> We Offers</h2>
-                    <p>Elit sit risus lorem proin eget molestie nibh onon neque turpis proin viverra vel arcu venenatis
-                        nulla blandit.</p>
+                <div class="container my-5" data-aos="fade-right">
+                    <div class="text-center">
+                        <h2 class="fw-bold">
+                            <span style="color: #ff0000;">What</span> We Offer
+                        </h2>
+                        <p class="text-muted mx-auto" style="max-width: 600px;">
+                            Elit sit risus lorem proin eget molestie nibh onon neque turpis proin viverra vel arcu venenatis
+                            nulla blandit.
+                        </p>
+                        <a href="{{ route('about') }}" class="btn mt-3"
+                            style="border: 1px solid #ff0000; color: #ff0000;">
+                            See More
+                        </a>
+                    </div>
                 </div>
+
+
 
                 <div class="grid">
                     <!-- Row 1 -->
@@ -271,18 +283,18 @@
         </section>
 
         {{-- blog section --}}
-        <section class="blog-section">
+        {{-- <section class="blog-section">
             <div class="blog-header">
                 <h2><span>News</span> Articles</h2>
                 <p>Elit sit risus lorem proin eget molestie nibh onon neque turpis proin.</p>
                 <a href="{{ route('blog.index') }}" class="view-all">More Articles</a>
-            </div>
+            </div> --}}
+            {{-- @if ($featuredPost)
             <section>
                 <div class="container my-5 d-flex justify-content-center">
                     <div class="col-md-6 text-center mb-4 featured-post">
                         <a href="{{ route('blog.show', $featuredPost->id) }}" class="text-decoration-none text-dark">
                             <div class="card border-0 shadow-sm" style="height: 600px;">
-                                <!-- Adjust card height to match -->
                                 <img src="{{ asset('storage/' . $featuredPost->image) }}"
                                     class="card-img-top rounded object-fit-cover"
                                     style="height: 400px; object-fit: cover; margin-bottom: 0;"
@@ -296,6 +308,9 @@
                     </div>
                 </div>
             </section>
+            @endif --}}
+
+
         </section>
 
         <section class="newsletter my-5" data-aos="fade-up">
