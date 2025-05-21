@@ -43,17 +43,23 @@
     <!-- Header -->
     <header class="bg-light">
         <!-- Top Bar -->
-        <div class="top-bar d-flex justify-content-between px-3 py-2 bg-danger text-white small">
+        <div class="top-bar d-flex justify-content-between px-3 py-2 text-white small"
+            style="background-color: #ff0000;">
             <div>
                 Need help now? Call for a same-day consultation 📞 +234 703 023 8199
             </div>
             <div>
                 📧 progemhubconsulting@gmail.com
                 <span class="ms-3">
-                    <i class="fab fa-facebook-f me-2"></i>
-                    <i class="fab fa-twitter me-2"></i>
-                    <i class="fab fa-instagram me-2"></i>
-                    <i class="fab fa-youtube"></i>
+                    <a href="https://www.instagram.com/progemhubconsulting/" target="_blank" class="text-white">
+                        <i class="fab fa-instagram me-2"></i>
+                    </a>
+                    <a href="http://x.com/progemhub?s=11&t=qATH7-vQEjutr5V6ZWhBsQ" target="_blank" class="text-white">
+                        <i class="fab fa-x me-2"></i>
+                    </a>
+                    <a href="http://www.youtube.com/@ProGemHubConsulting" target="_blank" class="text-white">
+                        <i class="fab fa-youtube me-2"></i>
+                    </a>
                 </span>
             </div>
         </div>
@@ -74,7 +80,7 @@
                         <li class="nav-item"><a class="nav-link" href="{{ route('case') }}">Case Studies</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('blog.index') }}">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact Us</a></li>
-                        <li class="nav-item dropdown">
+                        {{-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                                 Services
                             </a>
@@ -83,7 +89,7 @@
                                 <li><a class="dropdown-item" href="#">PR & Marketing</a></li>
                                 <li><a class="dropdown-item" href="#">Brand Strategy</a></li>
                             </ul>
-                        </li>
+                        </li> --}}
                     </ul>
                     <a href="{{ route('contact') }}" class="btn btn-outline-dark">Get in Touch ▶</a>
                 </div>
@@ -137,10 +143,20 @@
                     <div class="col-md-3">
                         <h6 class="mb-3">Follow Us</h6>
                         <div class="d-flex justify-content-center justify-content-md-start gap-3 fs-6">
-                            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                            <span class="ms-3">
+                                <a href="https://www.instagram.com/progemhubconsulting/" target="_blank"
+                                    class="text-white">
+                                    <i class="fab fa-instagram me-2"></i>
+                                </a>
+                                <a href="http://x.com/progemhub?s=11&t=qATH7-vQEjutr5V6ZWhBsQ" target="_blank"
+                                    class="text-white">
+                                    <i class="fab fa-x me-2"></i>
+                                </a>
+                                <a href="http://www.youtube.com/@ProGemHubConsulting" target="_blank"
+                                    class="text-white">
+                                    <i class="fab fa-youtube me-2"></i>
+                                </a>
+                            </span>
                         </div>
                     </div>
 
@@ -155,6 +171,11 @@
         </div>
     </footer>
 
+    <a href="https://wa.me/2347030238199" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
 
 
     <!-- JS Scripts -->
@@ -166,6 +187,26 @@
             duration: 1000
         });
     </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let hasShownModal = false;
+
+            window.addEventListener("scroll", function() {
+                const scrollPosition = window.scrollY + window.innerHeight;
+                const pageHeight = document.documentElement.scrollHeight;
+
+                // Trigger when scrolled past 50% of the page
+                if (!hasShownModal && scrollPosition >= pageHeight * 0.5) {
+                    const modal = new bootstrap.Modal(document.getElementById('contactModal'));
+                    modal.show();
+                    hasShownModal = true;
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>

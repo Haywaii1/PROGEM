@@ -4,13 +4,19 @@
     <main>
         <section class="hero">
             <div class="hero-content" data-aos="fade-right">
-                <h1>Build a brand that gets<br>remembered, repeated<br>and rewarded.</h1>
+                <h1 style="color: #ff0000">We help you build a brand story that<br> resonates, sparks conversation
+                    and<br>deliver lasting results.
+                </h1>
 
                 <p>
-                    Faucibus donec blandit vestibulum dignissim elementum curabitur cras sollicitudin.
-                    <span id="moreDetails" class="collapse">
-                        Curabitur vehicula purus ac nisl fermentum, non condimentum justo posuere.
-                        Sed vitae lacus id elit vehicula aliquet. Vivamus nec arcu nec arcu aliquet ultrices.
+                    At our core, we’re storytellers. We partner with you to uncover the unique essence of your brand and
+                    translate it into a captivating narrative that resonates with your audience. <span id="moreDetails"
+                        class="collapse">
+                        By understanding your
+                        business goals and the needs of your target market, we craft messaging that sparks relevant
+                        conversations and builds a strong community around your brand. This strategic approach ensures that
+                        our efforts translate into measurable outcomes, driving lasting value and growth for your
+                        organisation.
                     </span>
                 </p>
 
@@ -21,7 +27,7 @@
             </div>
 
             <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
-                <img src="img/pr1.png" alt="Brand Strategy Example">
+                <img src="img/pr-home.png" alt="Brand Strategy Example">
             </div>
         </section>
 
@@ -85,7 +91,7 @@
         <section class="clients-section">
             <div>
                 <div class="logo-grid"
-                    style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; padding: 20px; text-align: center;">
+                    style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; padding: 10px; text-align: center;">
                     <div class="logo-item" data-aos="fade-right">
                         <img src="img/SRMS.png" alt="srms"
                             style="height: 80px; object-fit: contain; display: block; margin: 0 auto;">
@@ -96,6 +102,10 @@
                     </div>
                     <div class="logo-item" data-aos="fade-down">
                         <img src="img/academy.jpg" alt="Academy"
+                            style="height: 80px; object-fit: contain; display: block; margin: 0 auto;">
+                    </div>
+                    <div class="logo-item" data-aos="fade-down">
+                        <img src="img/okes.jpg" alt="Academy"
                             style="height: 80px; object-fit: contain; display: block; margin: 0 auto;">
                     </div>
                 </div>
@@ -111,10 +121,10 @@
                 <!-- Left Section -->
                 <div class="left-section">
                     <h2><span class="highlight">Let's</span> Talk</h2>
-                    <p class="description">
+                    {{-- <p class="description">
                         Elit sit risus lorem proin eget molestie nibh onon neque turpis proin viverra vel arcu venenatis
                         nulla blandit.
-                    </p>
+                    </p> --}}
 
                     <div class="features-list">
                         <div class="feature-box">
@@ -160,7 +170,7 @@
                         <input type="text" name="name" placeholder="Full Name" required>
                         <input type="email" name="email" placeholder="Email Address" required>
                         <textarea name="message" placeholder="Messages" required></textarea>
-                        <button type="submit">SEND MESSAGE</button>
+                        <button type="submit" style="background-color: #ff0000; color: white;">SEND MESSAGE</button>
                     </form>
                 </div>
             </div>
@@ -175,8 +185,8 @@
                             <span style="color: #ff0000;">What</span> We Offer
                         </h2>
                         <p class="text-muted mx-auto" style="max-width: 600px;">
-                            Elit sit risus lorem proin eget molestie nibh onon neque turpis proin viverra vel arcu venenatis
-                            nulla blandit.
+                            Strategic PR, brand management and talent development solutions to build powerful Brands
+                            and foster a new generation of communication professionals.
                         </p>
                         <a href="{{ route('about') }}" class="btn mt-3"
                             style="border: 1px solid #ff0000; color: #ff0000;">
@@ -289,7 +299,7 @@
                 <p>Elit sit risus lorem proin eget molestie nibh onon neque turpis proin.</p>
                 <a href="{{ route('blog.index') }}" class="view-all">More Articles</a>
             </div> --}}
-            {{-- @if ($featuredPost)
+        {{-- @if ($featuredPost)
             <section>
                 <div class="container my-5 d-flex justify-content-center">
                     <div class="col-md-6 text-center mb-4 featured-post">
@@ -336,8 +346,44 @@
                 </form>
             </div>
         </section>
-
-
-
     </main>
+
+    <!-- Contact Us Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel" style="font-size: 15px">Schedule a consultation</h5>
+                    <button type="button" class="btn fs-4 fw-bold text-danger ms-auto" data-bs-dismiss="modal"
+                        aria-label="Close" style="border: none; background: transparent;">
+                        &times;
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="{{ route('contact.send') }}" method="POST">
+                        @csrf
+                        <div class="mb-3">
+                            <label for="full_name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="full_name" name="full_name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-danger w-100">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 @endsection

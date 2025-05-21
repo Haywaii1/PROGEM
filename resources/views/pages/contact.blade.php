@@ -3,11 +3,11 @@
     <div>
 
         <div>
-            <section class="contact-progem">
-                <div class="contact-progem-content">
+            <section class="contact-progem" py-5 text-center bg-light" data-aos="fade-right">
+                {{-- <div class="contact-progem-content">
 
                     <h1 class="about-title" data-aos="fade-right"><span>Contact</span> Us</h1>
-                </div>
+                </div> --}}
             </section>
         </div>
 
@@ -15,12 +15,11 @@
             <div class="contact py-5">
                 <div class="container">
                     <div class="row">
-                        <!-- Contact Info -->
                         <section class="contact-section">
-                            <div class="contact-content">
+                            <div class="contact-content"  data-aos="fade-right">
                                 <div class="left-column">
                                     <p class="section-label">CONTACT</p>
-                                    <h1><span class="red">Get</span> In Touch</h1>
+                                    <h1><span style="color: #ff0000">Get</span> In Touch</h1>
                                     <p class="subtitle">Elit sit risus lorem proin eget molestie nibh onon neque turpis
                                         proin viverra velarcu venenatis nulla blandit.</p>
 
@@ -35,10 +34,9 @@
                                         <div><br>
                                             <h3 style="font-size: 15px; font-weight: 600;">Follow Us</h3>
                                             <div class="social-icons">
-                                                <a href="#" class="icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                                <a href="#" class="icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                                <a href="#" class="icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                                                <a href="#" class="icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                                                <a href="http://x.com/progemhub?s=11&t=qATH7-vQEjutr5V6ZWhBsQ" target="_blank" class="icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                                <a href="https://www.instagram.com/progemhubconsulting/" target="_blank" class="icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                                <a href="http://www.youtube.com/@ProGemHubConsulting" target="_blank" class="icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                                             </div>
 
                                         </div>
@@ -46,7 +44,7 @@
                                 </div>
 
                                 <div class="right-column">
-                                    <div class="form-box">
+                                    <div class="form-box" data-aos="fade-left">
                                         <h2>How can we help?</h2>
                                         <p class="form-subtitle">Please fill the form below.</p>
 
@@ -61,7 +59,7 @@
                                             <input type="text" name="name" placeholder="Full Name" required>
                                             <input type="email" name="email" placeholder="Email Address" required>
                                             <textarea name="message" placeholder="Messages" required></textarea>
-                                            <button type="submit">SEND MESSAGE</button>
+                                            <button type="submit" style="background-color: #ff0000; color: white;">SEND MESSAGE</button>
                                         </form>
                                     </div>
                                 </div>

@@ -186,6 +186,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
   }
 
   .hero-image img {
@@ -1165,7 +1166,7 @@ body {
 /* About Page */
 
 .about-progem {
-    background-image: url('/img/pr2.png');
+    background-image: url('/img/about2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1253,7 +1254,7 @@ body {
 
 
 .contact-progem {
-    background-image: url('/img/pr2.png');
+    background-image: url('/img/contact-us.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1462,6 +1463,36 @@ body {
 
 /* blog */
 
+.blog-progem {
+    background-image: url('/img/article.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; /* full screen width */
+    height: 60vh; /* full screen height */
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 100px;
+    color: white;
+    position: relative;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+
+.blog-progem-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
 .blog-hero {
     background-image: url('/img/pr1.png'); /* Use the actual image path */
     background-size: cover;
@@ -1584,6 +1615,13 @@ body {
     color: white;
 }
 
+    .btn.btn-outline-dark:hover {
+        color: white;
+        border-color: #ff0000;
+        background-color: #ff0000;
+    }
+
+
 .section-heading {
     font-size: 2rem;
     font-weight: 700;
@@ -1608,6 +1646,62 @@ ul {
 
 ul li {
     margin-bottom: 0.5rem;
+}
+
+.mission-vision {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #f5f5f5; /* light gray */
+  padding: 2rem; /* optional: add some padding inside */
+  border-radius: 8px; /* optional: rounded corners */
+}
+
+
+.container.about-content {
+  flex: 1 1 45%; /* grow, shrink, basis - takes up about 45% width */
+  box-sizing: border-box;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    z-index: 9999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.whatsapp-float:hover {
+    background-color: #1ebe5d;
+    text-decoration: none;
+    color: white;
+}
+
+/* Case Study */
+
+.case-progem {
+    background-image: url('/img/case-study.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw; /* Use viewport width to force full screen width */
+    height: 60vh;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 100px;
+    color: white;
+    position: relative;
+    margin-bottom: 40px;
+    overflow: hidden;
 }
 
 

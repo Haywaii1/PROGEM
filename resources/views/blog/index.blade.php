@@ -2,10 +2,10 @@
 
 @section('content')
 <div class="container-fluid px-4 my-5">
-    <section class="about-progem">
-        <div class="about-progem-content">
+    <section class="blog-progem" py-5 text-center bg-light" data-aos="fade-right">
+        {{-- <div class="blog-progem-content">
             <h1 class="about-title" data-aos="fade-right"><span>Blog</span></h1>
-        </div>
+        </div> --}}
     </section>
 
     <section class="latest-posts py-5">
@@ -19,7 +19,7 @@
 
         <!-- Featured Post -->
         @if ($featuredPost)
-        <div class="container mb-5">
+        <div class="container mb-5" data-aos="fade-left">
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <a href="{{ route('blog.show', $featuredPost->id) }}" class="text-decoration-none text-dark">
@@ -38,7 +38,7 @@
 
         <!-- Other Posts Grid -->
         <div class="container">
-    <div class="row g-4">
+    <div class="row g-4" data-aos="fade-right">
         @foreach ($posts as $post)
         <div class="col-sm-6 col-lg-4 d-flex">
             <a href="{{ route('blog.show', $post->id) }}" class="text-decoration-none text-dark flex-fill">
